@@ -1,718 +1,690 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins';
-    text-decoration: none;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins";
+  text-decoration: none;
+  scroll-behavior: smooth;
 }
 
 /* Keyframes */
 @keyframes fade-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px) scale(0.9); 
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-30px) scale(0.9);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
 }
 
 @keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.9); 
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9);
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
+  100% {
+    opacity: 1;
+    transform: translateY(0px) scale(1);
+  }
 }
 /* Akhir Keyframes */
 
 body {
-    min-height: 100vh;
-    background-color: rgb(45, 45, 45);
-    background-size: cover;
-    background-position: center;
+  min-height: 100vh;
+  background-color: rgb(45, 45, 45);
+  background-size: cover;
+  background-position: center;
 }
 
 /* CSS Navbar */
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 20px 100px;
-    background: rgba(0, 0, 0, 0.144);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 100;
-    animation: fade-down 2s;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  background: rgba(0, 0, 0, 0.144);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  animation: fade-down 2s;
 }
 
 .Portofolio {
-    font-size: 32px;
-    color: #fff;
-    font-weight: 700;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 700;
 }
 
 .navbar a {
-    position: relative;
-    font-size: 18px;
-    color: #fff;
-    font-weight: 500;
-    margin-left: 40px;
+  position: relative;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-left: 40px;
 }
 
 .navbar a::before {
-    content: '';
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #fff;
-    transition: .3s;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background: #fff;
+  transition: 0.3s;
 }
 
 .navbar a:hover::before {
-    width: 100%;
+  width: 100%;
 }
-
-@keyframes fade-down {
-    0% {
-        opacity: 0;
-        transform: translateY(-30px) scale(0.9); 
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
-}
-
-@keyframes fade-up {
-    0% {
-        opacity: 0;
-        transform: translateY(30px) scale(0.9); 
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0px) scale(1);
-    }
-}
-
-
 
 /* Akhir Navbar */
 
 /* Home */
 .Home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    animation: fade-up 2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  animation: fade-up 2s;
 }
 
 .Home .FotoHalaman1 {
-    width: 400px;
-    height: 400px;
-    margin-right: 50px;
-    overflow: hidden;
-    border-radius: 10px;
+  width: 400px;
+  height: 400px;
+  margin-right: 50px;
+  overflow: hidden;
+  border-radius: 10px;
 }
 
-.FotoHalaman1 img{
-    height: 100%;
-    width: 100%;
-    transition: 0.5s;
+.FotoHalaman1 img {
+  height: 100%;
+  width: 100%;
+  transition: 0.5s;
 }
 
 .FotoHalaman1 img:hover {
-    transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .text {
-    max-width: 500px;
-    display: flex;
-    flex-direction: column;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
 }
 
 .text h5 {
-    color: lightblue;
-    font-size: 16px;
+  color: lightblue;
+  font-size: 16px;
 }
 
 .text h1 {
-    color: lightblue;
-    font-size: 3rem;
+  color: lightblue;
+  font-size: 3rem;
 }
 
 .text p {
-    padding-top: 15px;
-    color: #e5e5e5;
+  padding-top: 15px;
+  color: #e5e5e5;
 }
 
 .button {
-    margin: 45px 0;
+  margin: 45px 0;
 }
 
 .button .more {
-    font-size: 15px;
-    border-color: #e5e5e5;
-    color: #fff;
-    background-color: #333;
-    padding: 12px 25px;
-    margin: 5px 0;
-    border-radius: 30px;
-    font-weight: bold;
-    border:2px solid lightblue;
-    transition: 0.5s;
+  font-size: 15px;
+  border-color: #e5e5e5;
+  color: #fff;
+  background-color: #333;
+  padding: 12px 25px;
+  margin: 5px 0;
+  border-radius: 30px;
+  font-weight: bold;
+  border: 2px solid lightblue;
+  transition: 0.5s;
 }
 
 .button .more:hover {
-    background-color: aqua;
-    color: #333;
+  background-color: aqua;
+  color: #333;
 }
 
 .button .more:active {
-    background-color: bisque;
+  background-color: bisque;
 }
 /* Akhir Home */
 
 /* About */
 .space1 {
-    padding-top: 5%;
-    height: 100vh;
+  padding-top: 5%;
+  height: 100vh;
 }
 
 .kotaktentang {
-    margin-top: 10%;
-    animation: fade-up 2s;
+  margin-top: 10%;
+  animation: fade-up 2s;
 }
 
 .kotaktentang h1 {
-    font-size: 4rem;
-    color: #e5e5e5;
-    text-align: center;
-    grid-area: judul;
+  font-size: 4rem;
+  color: #e5e5e5;
+  text-align: center;
+  grid-area: judul;
 }
 
 .kotaktentang .deskripsi {
-    padding: 1% 10%;
-    grid-area: desk;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 2rem;
+  padding: 1% 10%;
+  grid-area: desk;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
 }
 
 .kotaktentang p {
-    font-size: 1.2rem;
-    color: #e5e5e5;
-    text-align: justify;
+  font-size: 1.2rem;
+  color: #e5e5e5;
+  text-align: justify;
 }
 /* Akhir About */
 
 /* Skills */
 .space2 {
-    padding-top: 8%;
-    height: 100vh;
+  padding-top: 8%;
+  height: 100vh;
 }
 .judul {
-    text-align: center;
-    color: #fff;
-    padding: 1rem;
-    position: relative;
-    animation: fade-up 2s;
+  text-align: center;
+  color: #fff;
+  padding: 1rem;
+  position: relative;
+  animation: fade-up 2s;
 }
 
 .judul:after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 4px;
-    width: 100px;
-    background-color: #e5e5e5;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 4px;
+  width: 100px;
+  background-color: #e5e5e5;
 }
 
 .Skills {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    grid-gap: 1rem;
-    padding: 1rem 80px;
-    font-size: 1.2rem;
-    animation: fade-up 2s;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  padding: 1rem 80px;
+  font-size: 1.2rem;
+  animation: fade-up 2s;
 }
 
 .kotakbox {
-    padding: 1rem;
-    color: #ddd;
-    cursor: pointer;
+  padding: 1rem;
+  color: #ddd;
+  cursor: pointer;
 }
 
 .tittlekotak {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .fotoskills img {
-    width: 90px;
-    height: 90px;
-    position: relative;
-    border-radius: 45px;
-    background-color: #fff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 90px;
+  height: 90px;
+  position: relative;
+  border-radius: 45px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .tittlekotak h3 {
-    color: #fff;
-    margin: 0.5rem;
-    margin-top: 15px;
+  color: #fff;
+  margin: 0.5rem;
+  margin-top: 15px;
 }
 
 .iconskill {
-    width: 50px;
+  width: 50px;
 }
 /* Akhir Skills */
 
 /* Experience */
 .space3 {
-    padding-top: 15%;
-    height: 100vh;
+  padding-top: 15%;
+  height: 100vh;
 }
 
 .Experience {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    animation: fade-up 2s;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  animation: fade-up 2s;
 }
 .KepalaFoto {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .KepalaFoto h1 {
-    font-size: 24px;
-    font-weight: bold;
+  font-size: 24px;
+  font-weight: bold;
 }
 .KepalaFoto a {
-    text-decoration: none;
-    color: #000;
-    font-size: 14px;
-    border: 1px solid #000;
-    padding: 5px 10px;
-    border-radius: 20px;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+  border: 1px solid #000;
+  padding: 5px 10px;
+  border-radius: 20px;
 }
 .card-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  cursor: pointer;
 }
 .card {
-    background-color: #fff;
-    border-radius: 15px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    position: relative;
-    transition: transform 0.3s ease;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+  transition: transform 0.3s ease;
 }
 .card:hover {
-    transform: translateY(-10px);
+  transform: translateY(-10px);
 }
 .card img {
-    width: 100%;
-    height: auto;
-    transition: transform 0.3s ease;
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
 }
 .card:hover img {
-    transform: scale(1.1);
+  transform: scale(1.1);
 }
 .card-content {
-    padding: 15px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(0, 0, 0, 0.5);
-    color: #fff;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
 }
 .card-content h2 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: bold;
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
 }
 .card-content p {
-    margin: 5px 0 0;
-    font-size: 14px;
+  margin: 5px 0 0;
+  font-size: 14px;
 }
 /* Akhir Experience */
 
 /* Halaman Contact */
 .space4 {
-    padding-top: 3%;
-    height: 100vh;
-    display: grid;
-    align-items: center;
-    justify-content: center;
+  padding-top: 3%;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-content: center;
 }
 
 .kepalaform {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 600px;
-    box-sizing: border-box;
-    animation: fade-up 2s;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+  box-sizing: border-box;
+  animation: fade-up 2s;
 }
 .kepalaform h1 {
-    font-size: 24px;
-    margin-bottom: 20px;
-    text-align: center;
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 .isiform {
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
 }
-.isiform input, .isiform textarea {
-    width: 48%;
-    padding: 10px;
-    border: 1px solid #e6e6e6;
-    border-radius: 3px;
-    background-color: #f7f7f7;
-    box-sizing: border-box;
+.isiform input,
+.isiform textarea {
+  width: 48%;
+  padding: 10px;
+  border: 1px solid #e6e6e6;
+  border-radius: 3px;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
 }
 .isiform textarea {
-    width: 100%;
-    height: 100px;
-    resize: none;
+  width: 100%;
+  height: 100px;
+  resize: none;
 }
 .isiform.full-width {
-    flex-direction: column;
+  flex-direction: column;
 }
 .isigrup.full-width input {
-    width: 100%;
+  width: 100%;
 }
 .checkbox {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
 }
 .checkbox input {
-    margin-right: 10px;
+  margin-right: 10px;
 }
 .btn {
-    background-color: aqua;
-    color: black;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-    display: block;
-    width: 100%;
-    text-align: center;
+  background-color: aqua;
+  color: black;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  text-align: center;
 }
 .btn:hover {
-    background-color: lightgray;
-    color: black;
+  background-color: lightgray;
+  color: black;
 }
 /* Akhir Contact */
 
 /* Footer */
 .footer {
-    margin-top: 15px;
-    background-color: #000;
-    color: white;
-    display: block;
-    text-align: center;
-    font-size: 20px;
-    animation: fade-up 2s;
+  margin-top: 15px;
+  background-color: #000;
+  color: white;
+  display: block;
+  text-align: center;
+  font-size: 20px;
+  animation: fade-up 2s;
 }
 /* Akhir Footer */
 
 /* Hamburger Menu */
 .menu-toggle {
-    display: none;
-    flex-direction: column;
-    height: 20px;
-    justify-content: space-between;
-    position: relative;
+  display: none;
+  flex-direction: column;
+  height: 20px;
+  justify-content: space-between;
+  position: relative;
 }
 
 .menu-toggle input {
-    position: absolute;
-    width: 40px;
-    height: 28px;
-    left: -5px;
-    top: -3px;
-    opacity: 0;
-    cursor: pointer;
-    z-index: 2;
+  position: absolute;
+  width: 40px;
+  height: 28px;
+  left: -5px;
+  top: -3px;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 2;
 }
 
 .menu-toggle span {
-    display: block;
-    width: 28px;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
-    border-radius: 3px;
-    transition: all 0.5s;
+  display: block;
+  width: 28px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  transition: all 0.5s;
 }
 
 /* Responsive */
 /* Ukuran Tablet */
 @media screen and (max-width: 968px) {
+  /* Navbar */
+  header {
+    padding: 20px 50px;
+  }
 
-/* Navbar */
-    header {
-        padding: 20px 50px;
-    }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    padding: 10px 0;
+    display: none;
+  }
 
-    .navbar {
-        display: flex;
-        flex-direction: column; 
-        align-items: flex-start;
-        position: absolute;
-        top: 60px; 
-        left: 0;
-        width: 100%;
-        background: rgba(0, 0, 0, 0.8); 
-        padding: 10px 0; 
-        display: none; 
-    }
+  .navbar.active {
+    display: flex;
+  }
 
-    .navbar.active {
-        display: flex;
-    }
+  .navbar a {
+    margin: 10px 0;
+    margin-left: 20px;
+  }
 
-    .navbar a {
-        margin: 10px 0;
-        margin-left: 20px;
-    }
+  /* Hamburger */
+  .menu-toggle {
+    display: grid;
+  }
 
-/* Hamburger */
-    .menu-toggle {
-        display: grid;
-    }
+  /* Home */
+  .Home .FotoHalaman1 {
+    width: 300px;
+    height: 300px;
+    margin-left: 51px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
+  .FotoHalaman1 img {
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+  }
 
-/* Home */
-    .Home .FotoHalaman1 {
-        width: 300px;
-        height: 300px;
-        margin-left: 51px;
-        margin-bottom: 10px;
-        overflow: hidden;
-        border-radius: 10px;
-    }
+  .FotoHalaman1 img:hover {
+    transform: scale(1.2);
+  }
 
-    .FotoHalaman1 img{
-        height: 100%;
-        width: 100%;
-        transition: 0.5s;
-    }
+  .Home {
+    flex-direction: column;
+    padding: 30px 20px;
+    text-align: center;
+  }
 
-    .FotoHalaman1 img:hover {
-        transform: scale(1.2);
-    }
+  .text h1 {
+    padding-top: 10px;
+    font-size: 28px;
+  }
 
-    .Home {
-        flex-direction: column; 
-        padding: 30px 20px; 
-        text-align: center; 
-    }
+  .text p {
+    font-size: 14px;
+  }
 
-    .text h1 {
-        padding-top: 10px;
-        font-size: 28px; 
-    }
+  .button .more {
+    padding: 8px 16px;
+  }
+  /* About */
 
-    .text p {
-        font-size: 14px; 
-    }
-
-    .button .more {
-        padding: 8px 16px; 
-    }
-/* About */
-
-/* Skills */
-    .Skills {
-    grid-template-columns: repeat(2, 1fr); 
+  /* Skills */
+  .Skills {
+    grid-template-columns: repeat(2, 1fr);
     padding: 1rem 40px;
-    }
+  }
 
-    .kotakbox {
+  .kotakbox {
     padding: 0.8rem;
-    }
+  }
 
-    .tittlekotak h3 {
+  .tittlekotak h3 {
     font-size: 1.2rem;
-    }
+  }
 
-    .fotoskills img {
+  .fotoskills img {
     width: 70px;
     height: 70px;
-    }
+  }
 
-/* Experience */
-    .space3 {
-        padding-top: 80%;
-    }  
-    
-    .KepalaFoto h1 {
-        font-size: 20px; 
-    }
+  /* Experience */
+  .space3 {
+    padding-top: 80%;
+  }
 
-    .KepalaFoto a {
-        font-size: 12px; 
-    }
+  .KepalaFoto h1 {
+    font-size: 20px;
+  }
 
-    .card-container {
-        grid-template-columns: repeat(2, 1fr); 
-    }
+  .KepalaFoto a {
+    font-size: 12px;
+  }
 
-/* Contact */
-    .space4 {
-        padding-top: 100%;
-    }
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
 
-/* Footer */
-    .footer {
-        margin-top: 60%;
-        background-color: #000;
-        color: white;
-        display: block;
-        text-align: center;
-        font-size: 20px;
-    }
+  /* Contact */
+  .space4 {
+    padding-top: 100%;
+  }
+
+  /* Footer */
+  .footer {
+    margin-top: 60%;
+    background-color: #000;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
 }
 
 /* Ukuran Mobile */
 @media screen and (max-width: 576px) {
+  /* Navbar */
 
-/* Navbar */
+  /* Home */
+  .Home .FotoHalaman1 {
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    margin-right: 51px;
+    overflow: hidden;
+    border-radius: 10px;
+  }
 
-/* Home */
-    .Home .FotoHalaman1 {
-        align-items: center;
-        width: 300px;
-        height: 300px;
-        margin-right: 51px;
-        overflow: hidden;
-        border-radius: 10px;
-    }
+  .FotoHalaman1 img {
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    transition: 0.5s;
+  }
 
-    .FotoHalaman1 img{
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        transition: 0.5s;
-    }
+  .FotoHalaman1 img:hover {
+    transform: scale(1.2);
+  }
 
-    .FotoHalaman1 img:hover {
-        transform: scale(1.2);
-    }
+  .text h5 {
+    font-size: 18px;
+  }
 
-    .text h5 {
-        font-size: 18px; 
-    }
+  .text h1 {
+    font-size: 24px;
+  }
 
-    .text h1 {
-        font-size: 24px;
-    }
+  .text p {
+    font-size: 12px;
+  }
 
-    .text p {
-        font-size: 12px; 
-    }
+  /* About */
 
-/* About */
+  /* Skills */
+  .space2 {
+    padding-top: 25%;
+  }
 
-/* Skills */
-    .space2 {
-        padding-top: 25%;
-    }
+  .Skills {
+    grid-template-columns: 1fr;
+    padding: 1rem 20px;
+  }
 
-    .Skills {
-        grid-template-columns: 1fr; 
-        padding: 1rem 20px; 
-    }
+  .kotakbox {
+    padding: 0.5rem;
+  }
 
-    .kotakbox {
-        padding: 0.5rem; 
-    }
+  .tittlekotak h3 {
+    font-size: 1rem;
+  }
 
-    .tittlekotak h3 {
-        font-size: 1rem;
-    }
+  .fotoskills img {
+    width: 50px;
+    height: 50px;
+  }
 
-    .fotoskills img {
-        width: 50px; 
-        height: 50px;
-    }
+  /* Experience */
+  .space3 {
+    padding-top: 160%;
+  }
 
-/* Experience */
-    .space3 {
-        padding-top: 160%;
-    }
+  .KepalaFoto h1 {
+    font-size: 18px;
+  }
 
-    .KepalaFoto h1 {
-        font-size: 18px; 
-    }
+  .KepalaFoto a {
+    font-size: 12px;
+  }
 
-    .KepalaFoto a {
-        font-size: 12px;
-    }
+  .card-container {
+    grid-template-columns: 1fr;
+  }
 
-    .card-container {
-        grid-template-columns: 1fr;
-    }
+  .card-content h2 {
+    font-size: 16px;
+  }
 
-    .card-content h2 {
-        font-size: 16px;
-    }
+  .card-content p {
+    font-size: 12px;
+  }
 
-    .card-content p {
-        font-size: 12px; 
-    }
+  /* Contact */
+  .space4 {
+    padding-top: 275%;
+  }
 
-/* Contact */
-    .space4 {
-        padding-top: 275%;
-    }
-
-/* Footer */
-    .footer {
-        margin-top:95%;
-        background-color: #000;
-        color: white;
-        display: block;
-        text-align: center;
-        font-size: 20px;
-    }
+  /* Footer */
+  .footer {
+    margin-top: 95%;
+    background-color: #000;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 20px;
+  }
 }
-
